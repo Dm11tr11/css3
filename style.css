@@ -1,0 +1,80 @@
+body {
+  font-family: sans-serif;
+  background: #f8f8f8;
+  text-align: center;
+  padding: 20px;
+}
+
+.project {
+  margin: 40px auto;
+  max-width: 400px;
+}
+
+/* PENGUINS – oval crop + yellow tint + shadow */
+.penguins img {
+  width: 100%;
+  border-radius: 50% / 40%;
+  filter: sepia(60%) brightness(105%);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* FOOTBALL – centered large tic-tac-toe overlay + field pushed down */
+.field-wrapper {
+  display: inline-block;
+  padding: 25px;
+  background-image: url("images/tic-tac-toe.png");
+  background-size: 120% 120%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.field-wrapper .field {
+  width: 100%;
+  filter: grayscale(100%);
+  display: block;
+  margin-top: 20px; /* pushes the field image lower */
+}
+
+/* DINOSAUR – now GREEN instead of blue */
+.dinosaur img {
+  width: 70%;
+  filter: hue-rotate(75deg) saturate(150%);
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.4);
+}
+
+/* SEAGULL – soft background */
+.seagull {
+  background: linear-gradient(to bottom right, #dbeaff, #ffffff);
+  padding: 20px;
+  border-radius: 8px;
+}
+.seagull img {
+  width: 90%;
+}
+
+/* BUTTERFLY – inverted color + rounded crop */
+.butterfly img {
+  width: 100%;
+  border-radius: 30% / 15%;
+  filter: invert(100%);
+}
+
+/* THEATER STAGE – blurred background + centered text */
+.theater-wrapper {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.theater-wrapper img {
+  width: 100%;
+  filter: blur(3px);
+}
+.theater-wrapper .label {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.6em;
+  font-weight: bold;
+  text-shadow: 0 0 10px red;
+}
